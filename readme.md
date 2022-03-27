@@ -22,6 +22,10 @@
 - 此程式會開啟Chrome瀏覽器，開啟的瀏覽器請勿關閉，否則導致程式執行失敗\
 - 請安裝Chrome瀏覽器
 
+## 五、下載vscode
+- 下載網址: https://code.visualstudio.com/
+- 將本專案資料拖曳至Visual Studio Code的圖標裡，即可開啟
+
 ****
 ## 上方點兩下失敗，請到此觀看
 
