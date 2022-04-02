@@ -89,7 +89,7 @@ Bruce Tsai - bruce60108010204@gmail.com
 
 專案位置: https://github.com/bruce601080102/seo_web_crawler
 ****
-## 更新日志
+## 更新日誌
 V1.0.0 版本 2022-03-26
 
     1.初始功能: 創建excel
