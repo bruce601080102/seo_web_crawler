@@ -2,9 +2,11 @@
 ## 一、給做SEO行銷人員的介紹
 這是個半自動化搜尋關鍵字流量的程式，可以自動化採集關鍵字流量，可以減少乏味的搜尋動作。根據統計，Google伺服器每約80次短頻查詢，就會跳出驗證畫面。
 
-![image]("./images/demo1.jpg")
-
-
+<div align="center">
+  <a href="https://raw.githubusercontent.com/bruce601080102/seo_web_crawler">
+    <img src="images/demo1.jpg" alt="Logo" width="800" height="300">
+  </a>
+</div>
 ## 二、執行方法
 ### 方法一
 - 滑鼠點選兩下main.exe檔，即可執行程式
@@ -22,9 +24,15 @@
   >  normal_result_column: 一般查詢結果欄位名稱(欄位C-1)
 
 ## 四、注意事項
-- 請與data資料夾中example裡的「泓記實業有限公司V3 -黃佑慈【SEO關鍵字評估.xlsx」複本.xlsx格式相同
+- 請與data資料夾中example裡的「「泓記實業有限公司V3.xlsx」複本.xlsx格式相同
 - 此程式會開啟Chrome瀏覽器，開啟的瀏覽器請勿關閉，否則導致程式執行失敗\
 - 請安裝Chrome瀏覽器
+- 如果無法通過語音驗證，請轉到圖像驗證，並人工點選(如下圖範例)
+<div align="center">
+  <a href="https://raw.githubusercontent.com/bruce601080102/seo_web_crawler">
+    <img src="images/demo2.jpg" alt="Logo" width="700" height="500">
+  </a>
+</div>
 
 ## 五、下載vscode
 - 下載網址: https://code.visualstudio.com/
