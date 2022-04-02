@@ -1,6 +1,10 @@
-# 半自動化SEO流量查詢系統
+# 自動化SEO流量查詢系統
 ## 一、給做SEO行銷人員的介紹
-這是個半自動化搜尋關鍵字流量的程式，除了需要人工點選Google Recaptcha之外，可以自動化採集關鍵字流量，可以減少乏味的搜尋動作。根據統計，Google伺服器每約80次短頻查詢，就會跳出驗證畫面。
+這是個半自動化搜尋關鍵字流量的程式，可以自動化採集關鍵字流量，可以減少乏味的搜尋動作。根據統計，Google伺服器每約80次短頻查詢，就會跳出驗證畫面。
+
+![image]("./images/demo1.jpg")
+
+
 ## 二、執行方法
 ### 方法一
 - 滑鼠點選兩下main.exe檔，即可執行程式
@@ -40,6 +44,7 @@ https://www.python.org/downloads/windows/
 
 安裝包指令
 ```sh
+pip install PyAudio-0.2.11-cp37-cp37m-win_amd64.whl
 pip install -r requirements.txt
 ```
 

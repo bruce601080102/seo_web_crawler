@@ -1,0 +1,4 @@
+*.ipynb
+dist
+build
+.ipynb_checkpoints
