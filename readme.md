@@ -1,13 +1,15 @@
 # 自動化SEO流量查詢系統
 ## 一、給做SEO行銷人員的介紹
-這是個半自動化搜尋關鍵字流量的程式，可以自動化採集關鍵字流量，可以減少乏味的搜尋動作。根據統計，Google伺服器每約80次短頻查詢，就會跳出驗證畫面。
+這是個自動化搜尋關鍵字流量的程式，已經破解Google Recaptcha語音辨識的部分，可以完全自動化採集關鍵字流量，以減少乏味的搜尋動作。根據統計，Google伺服器每約80次短頻查詢，就會跳出驗證畫面。
 
 <div align="center">
   <a href="https://raw.githubusercontent.com/bruce601080102/seo_web_crawler">
-    <img src="images/demo1.jpg" alt="Logo" width="800" height="300">
+    <img src="images/dmeo3.gif" alt="Logo" width="700" height="400">
   </a>
 </div>
+
 ## 二、執行方法
+
 ### 方法一
 - 滑鼠點選兩下main.exe檔，即可執行程式
 ### 方法二
