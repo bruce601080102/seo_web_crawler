@@ -220,14 +220,17 @@ class CrawlerQuery:
 
 if __name__ == '__main__':
     print("begin")
+    df = pd.read_excel("data/input.xlsx", sheet_name="SEO關鍵字評估")
+    df.columns
     uc = UnCaptcha()
     config = configparser.ConfigParser()
     config.read('conf/env.cfg', encoding = 'utf8')
     file_path = config['File']['file_path']
     sheet_name = config['File']['sheet_name']
-    query_column_name = config['File']['query_column_name']
-    normal_result_column = config['File']['normal_result_column']
-
+    # query_column_name = config['File']['query_column_name']
+    # normal_result_column = config['File']['normal_result_column']
+    query_column_name = df.columns[1]
+    normal_result_column = df.columns[2]
     cq = CrawlerQuery(file_path, sheet_name, query_column_name, normal_result_column)
     t1 = time.time()
     cq.run()
