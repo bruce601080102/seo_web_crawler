@@ -91,7 +91,6 @@ class CrawlerQuery:
                 self.df['Unnamed: 3'].iloc[row] = int(result_title.replace(",",""))
             except Exception:
                 self.df['Unnamed: 3'].iloc[row] = int(result_title)
-
         else:
             result = "空值"
             result_title = "空值"
@@ -130,11 +129,14 @@ class CrawlerQuery:
     def error_webdriver(self, driver, url ,query_key):
         val_status = "尚未需要驗證"
         try:
+            print("=========獲取搜尋量 開始============")   
             driver.get(url + query_key)
             list_result = driver.find_element_by_xpath("/html/body/div[7]/div/div[7]/div[1]/div/div/div/div").text.split(" ")
             result = list_result[1]
             if result == "項結果":
                 result = list_result[0]
+
+            print("=========獲取搜尋量 結束============")    
         except:
             bool_value = 0
             while bool_value == 0:
@@ -148,6 +150,7 @@ class CrawlerQuery:
                     time.sleep(0.1)
                     self.captcha_result()
                 except Exception:
+                    print(val_status)
                     pass
 
                 # 如果跳出驗證，需手動驗證，這時需要挑出畫面，並等待
@@ -173,6 +176,7 @@ class CrawlerQuery:
                 self.df[self.normal_result_column].iloc[row] = int(result.replace(",",""))
             except Exception:
                 self.df[self.normal_result_column].iloc[row] = int(result)
+
             result_title, val_status = self.error_webdriver(self.driver, self.allintitle_url, query_key)
             try:
                 self.df['Unnamed: 3'].iloc[row] = int(result_title.replace(",",""))
@@ -185,7 +189,6 @@ class CrawlerQuery:
             self.df['Unnamed: 3'].iloc[row] = result_title
         return result, result_title, val_status
         
-
     def run(self):
         r = 2
         data = self.df[self.query_column_name][2:]
@@ -214,7 +217,7 @@ class CrawlerQuery:
                 val_status),
                 end=''
             )
-
+        self.driver.close()
         self.df.to_excel("data/output.xlsx")
         
 
